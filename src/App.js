@@ -15,7 +15,7 @@ export default function App() {
           </Scroll>
           <Scroll html>
             <div style={{ transform: 'translate3d(65vw, 192vh, 0)' }}>
-              Interactive 
+              Immersive
               <br />
               Web
               <br />
