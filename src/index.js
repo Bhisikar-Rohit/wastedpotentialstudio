@@ -12,7 +12,8 @@ function Overlay() {
         portfolio
       </a>
       <div style={{ position: 'absolute', top: 40, left: 40, fontSize: '13px' }}>wasted potential —</div>
-      <div style={{ position: 'absolute', bottom: 40, right: 40, fontSize: '13px' }}>10/06/2023</div>
+      <div style={{ position: 'absolute', top: 40, right: 40, fontSize: '13px' }}>About</div>
+      <div style={{ position: 'absolute', bottom: 40, right: 40, fontSize: '13px' }}>01/07/2023</div>
     </div>
   )
 }

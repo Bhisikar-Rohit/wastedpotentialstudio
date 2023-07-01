@@ -7,7 +7,7 @@ import { easing } from 'maath'
 export default function App() {
   return (
     <Canvas camera={{ position: [0, 0, 20], fov: 15 }}>
-      <ScrollControls damping={0.2} pages={3} distance={0.5}>
+      <ScrollControls damping={0.2} pages={2.93} distance={0.2}>
         <Lens>
           <Scroll>
             <Typography />
