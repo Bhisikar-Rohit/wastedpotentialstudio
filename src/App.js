@@ -3,11 +3,20 @@ import { useRef, useState } from 'react'
 import { Canvas, createPortal, useFrame, useThree } from '@react-three/fiber'
 import { useFBO, useGLTF, useScroll, Text, Image, Scroll, Preload, ScrollControls, MeshTransmissionMaterial } from '@react-three/drei'
 import { easing } from 'maath'
+import {Routes, Route, useLocation } from 'react-router-dom'
+import Navbar from './Components/Navbar'
+import About from './Components/About'
+import Contact from './Components/Contact'
+import { AnimatePresence} from "framer-motion"
+import Home from './Components/home.js'
+
 
 export default function App() {
+  
   return (
+    <> 
     <Canvas camera={{ position: [0, 0, 20], fov: 15 }}>
-      <ScrollControls damping={0.2} pages={2.93} distance={0.2}>
+      <ScrollControls damping={0.2} pages={2.90} distance={0.2}>
         <Lens>
           <Scroll>
             <Typography />
@@ -15,11 +24,11 @@ export default function App() {
           </Scroll>
           <Scroll html>
             <div style={{ transform: 'translate3d(65vw, 192vh, 0)' }}>
-              Immersive
+              
               <br />
-              Web
+              
               <br />
-              Design
+              
               <br />
             </div>
           </Scroll>
@@ -30,6 +39,7 @@ export default function App() {
         </Lens>
       </ScrollControls>
     </Canvas>
+    </>
   )
 }
 
@@ -112,3 +122,24 @@ function Typography() {
     </>
   )
 }
+
+// function App () {
+//   const location = useLocation()
+
+//   return (
+//     <>
+//      <Navbar>
+//       <Routes location={location} key={location.pathname}>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/about" element={<About />} />
+//         <Route path="/contact" element={<Contact />} />
+
+//       </Routes>
+
+//      </Navbar>
+//     </>
+//   )
+// }
+
+
+
