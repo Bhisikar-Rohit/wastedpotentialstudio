@@ -9,7 +9,7 @@
     "@react-three/drei": "9.56.1",
     "@react-three/fiber": "8.10.1",
     "@types/three": "0.148.1",
-    "framer-motion": "^10.12.18",
+    "framer-motion": "^10.18.0",
     "maath": "0.5.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
